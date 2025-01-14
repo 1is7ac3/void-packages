@@ -1,0 +1,28 @@
+# Template file for 'softmaker-freeoffice'
+pkgname=softmaker-freeoffice
+version=2024.1220
+revision=2
+archs="x86_64"
+short_desc="Linux office suite with similar appearance to MS Office"
+maintainer="1is7ac3 <isaac.qa13@gmail.com>"
+license="custom:EULA"
+homepage="https://www.freeoffice.com"
+distfiles="https://www.softmaker.net/down/${pkgname}-${version/./_}-01_amd64.deb"
+checksum=a057cbea731cd51b8968634fc628ead749a060ad5b7ea49d97d8d4a57bdabd3a
+allow_unknown_shlibs=yes
+nodebug=yes
+nostrip=yes
+restricted=yes
+repository=nonfree
+ignore_elf_dirs="/usr/share/freeoffice2024"
+
+do_install() {
+	rm share/applications/planmaker-2024.desktop
+	rm share/applications/presentations-2024.desktop
+	rm share/applications/textmaker-2024.desktop
+	vcopy share usr/
+	vbin bin/planmaker24free
+	vbin bin/presentations24free
+	vbin bin/textmaker24free
+	vlicense share/doc/softmaker-freeoffice-2024/copyright
+}
