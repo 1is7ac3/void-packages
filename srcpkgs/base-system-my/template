@@ -1,7 +1,7 @@
 # Template file for 'base-system-my'
 pkgname=base-system-my
-version=1.7
-revision=1
+version=1.8
+revision=2
 build_style=meta
 short_desc="Void Linux my meta package"
 maintainer="1is7ac3 <isaac.qa13@gmail.com>"
@@ -11,11 +11,11 @@ homepage="https://www.voidlinux.org"
 depends="
  pipewire spectacle gwenview okular kdeconnect brother-brlaser libspa-bluetooth
  grub-x86_64-efi power-profiles-daemon xmirror NetworkManager tzdata util-linux
- print-manager base-files coreutils diffutils ncurses ark zsh xtools kde-plasma
+ print-manager base-files coreutils diffutils ncurses ark lsd xtools kde-plasma
  void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree runit-void tar
  noto-fonts-cjk kdenlive btrfs-progs pciutils usbutils openssh linux bluez file
  kde-baseapps glibc-locales plasma-browser-integration dracut less gzip iputils 
  grep shadow void-artwork vim xbps linux-firmware-network linux-firmware-nvidia
  kcalc wifi-firmware cups-browsed avahi inkscape cups-filters font-awesome6 kbd
- sed opendoas nss-mdns papirus-icon-theme ffmpegthumbs kdegraphics-thumbnailers
- lsd removed-packages"
+ sed sudo nss-mdns papirus-icon-theme ffmpegthumbs kdegraphics-thumbnailers
+ removed-packages lm_sensors fish-shell"
