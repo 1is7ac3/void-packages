@@ -1,7 +1,7 @@
 # Template file for 'base-system-my'
 pkgname=base-system-my
-version=1.8
-revision=2
+version=1
+revision=5
 build_style=meta
 short_desc="Void Linux my meta package"
 maintainer="1is7ac3 <isaac.qa13@gmail.com>"
@@ -16,6 +16,6 @@ depends="
  noto-fonts-cjk kdenlive btrfs-progs pciutils usbutils openssh linux bluez file
  kde-baseapps glibc-locales plasma-browser-integration dracut less gzip iputils 
  grep shadow void-artwork vim xbps linux-firmware-network linux-firmware-nvidia
- kcalc wifi-firmware cups-browsed avahi inkscape cups-filters font-awesome6 kbd
- sed sudo nss-mdns papirus-icon-theme ffmpegthumbs kdegraphics-thumbnailers
- removed-packages lm_sensors fish-shell"
+ kcalc cups-browsed avahi inkscape cups-filters font-awesome6 kbd fastfetch
+ sed sudo nss-mdns papirus-icon-theme ffmpegthumbs kdegraphics-thumbnailers zsh
+ removed-packages lm_sensors"
