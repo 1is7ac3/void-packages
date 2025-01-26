@@ -1,6 +1,6 @@
 # Template file for 'handbrake'
 pkgname=handbrake
-version=1.8.1
+version=1.9.0
 revision=1
 build_style=gnu-configure
 configure_args="--force --disable-df-fetch --harden
@@ -23,7 +23,7 @@ license="GPL-2.0-only"
 homepage="https://handbrake.fr/"
 changelog="https://github.com/HandBrake/HandBrake/releases"
 distfiles="https://github.com/HandBrake/HandBrake/releases/download/${version}/HandBrake-${version}-source.tar.bz2"
-checksum=f411d54b1760b61b2361343ffa8f9d857f228cd477f885659e0322b619adee90
+checksum=c15b451502f5c938798595df897a41290e8881b3efb8edd69ff7db2d985733b0
 nocross=yes
 
 build_options="fdk_aac nvenc qsv"
@@ -38,21 +38,6 @@ case "$XBPS_TARGET_MACHINE" in
 		CFLAGS="-msse"
 		;;
 esac
-
-pre_configure() {
-	# use system libraries, don't download them
-	mv contrib/ffmpeg bkffmpeg
-	rm -rf contrib/*
-	mv bkffmpeg contrib/ffmpeg
-	for module in fdk-aac libbluray libdav1d libdvdnav libdvdread nvenc \
-		x264 x265 zimg svt-av1 libvpl; do
-	    vsed -i "/MODULES += contrib\/${module}/d" make/include/main.defs
-	done
-}
-
-pre_build() {
-	unset AS LD
-}
 
 handbrake-cli_package() {
 	short_desc+=" - CLI utility"
