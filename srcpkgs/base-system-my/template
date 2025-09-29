@@ -1,0 +1,20 @@
+# Template file for 'base-system-my'
+pkgname=base-system-my
+version=2.1
+revision=1
+metapackage=yes
+short_desc="Void Linux my meta package"
+maintainer="1is7ac3 <isaac.qa13@gmail.com>"
+license="Public Domain"
+homepage="https://www.voidlinux.org"
+
+depends="
+ spectacle gwenview okular kdeconnect brother-brlaser libspa-bluetooth usbutils
+ grub-x86_64-efi power-profiles-daemon xmirror NetworkManager tzdata util-linux
+ print-manager base-files coreutils diffutils ncurses ark zsh xtools kde-plasma
+ void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree runit-void tar
+ noto-fonts-cjk kdenlive btrfs-progs pciutils openssh bluez file fastfetch sudo
+ kde-baseapps glibc-locales plasma-browser-integration dracut less gzip iputils 
+ grep shadow void-artwork vim xbps linux-firmware-network linux-firmware-nvidia
+ kcalc sed cups-filters font-awesome6 papirus-icon-theme which removed-packages
+ lsd"
