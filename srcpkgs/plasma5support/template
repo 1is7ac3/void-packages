@@ -1,6 +1,10 @@
 # Template file for 'plasma5support'
 pkgname=plasma5support
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -10,15 +14,24 @@ hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext
 makedepends="qt6-declarative-devel kf6-kconfig-devel kf6-ki18n-devel
  kf6-kcoreaddons-devel kf6-knotifications-devel kf6-kguiaddons-devel
  kf6-solid-devel libksysguard-devel kf6-kio-devel kf6-kidletime-devel
+<<<<<<< HEAD
  kf6-kservice-devel kf6-kio-devel kf6-kunitconversion-devel
  kf6-kholidays-devel kf6-networkmanager-qt-devel plasma-activities-devel
  qt6-base-private-devel libglib-devel"
+=======
+ kf6-kholidays-devel kf6-kunitconversion-devel"
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 short_desc="Support components for porting from KF5/Qt5 to KF6/Qt6"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"
 homepage="https://invent.kde.org/plasma/plasma5support"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=811551c98c4bf042b791e2635a900fe76aaf2b0dc71b54dec80f9c387f74b8ef
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=40db7736f6bf541aa70ad2810220446725d426773dc9281c4511ac276a87c6c8
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

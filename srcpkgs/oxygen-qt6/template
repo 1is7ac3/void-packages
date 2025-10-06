@@ -1,6 +1,10 @@
 # Template file for 'oxygen-qt6'
 pkgname=oxygen-qt6
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DBUILD_QT5=OFF
@@ -25,5 +29,10 @@ short_desc="Oxygen visual style for the Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later, GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/oxygen"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname%-qt6}-${version}.tar.xz"
 checksum=d349c7928f068982337bb45481ec19d942a68f47e0f0a25eb839ea2ff358556a
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=df61d5769c3967d1e7db50a5715712d625bcee4b8eca81152bd4696f7caaa7c5
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

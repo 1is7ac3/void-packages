@@ -1,6 +1,10 @@
 # Template file for 'polkit-kde-agent'
 pkgname=polkit-kde-agent
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext"
@@ -11,6 +15,12 @@ makedepends="kf6-kcrash-devel kf6-kdbusaddons-devel kf6-kiconthemes-devel
 short_desc="KDE PolKit auth agent"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
+<<<<<<< HEAD
 homepage="https://commits.kde.org/polkit-kde-agent"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-1-${version}.tar.xz"
 checksum=351ccd623fee873c1d7a70f40e0a05bf984ead14791cd9257b2b7bdd2ddc04cc
+=======
+homepage="https://invent.kde.org/plasma/polkit-kde-agent-1"
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9a3e0942d523a5db2b5072dc59e8f1f1787071319c352e26d079301ff464e520
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

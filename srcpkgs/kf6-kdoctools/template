@@ -1,6 +1,10 @@
 # Template file for 'kf6-kdoctools'
 pkgname=kf6-kdoctools
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -12,8 +16,13 @@ short_desc="KDE Create documentation from DocBook"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdoctools"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=f56536255ca74554a9c02d395fd78c8b4a0d2a1c7d003ce621b324e889f85c0f
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=0585dd21fa9b69c921428aae896c392bfabdb0e97f2dba81735ce263529d70b8
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 post_patch() {
 	vsed -i -e '

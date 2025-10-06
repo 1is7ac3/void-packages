@@ -1,6 +1,10 @@
 # Template file for 'plasma-workspace-wallpapers'
 pkgname=plasma-workspace-wallpapers
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -9,5 +13,10 @@ short_desc="KDE Plasma wallpapers"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/plasma-workspace-wallpapers"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=05ac1d3ac607563bf18de5cec49f6c0a5bf51c82e6b8bf4466886e0d19d3593b
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=ddd0de8516dc2d9c276af2dde5eaab5d28ad002b1b1ada240bc03512173621f8
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

@@ -1,19 +1,33 @@
 # Template file for 'kf6-kconfig'
 pkgname=kf6-kconfig
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-base qt6-tools
  qt6-declarative-host-tools"
+<<<<<<< HEAD
 makedepends="qt6-declarative-devel qt6-base-private-devel"
+=======
+makedepends="qt6-declarative-private-devel qt6-base-private-devel
+ qt6-tools-devel"
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 short_desc="KDE Persistent platform-independent application settings"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kconfig"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=daecf4989af9958144139e4918c22cd05b5a96527c51d737eae7c57718167d15
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=3405e338471c6b9b3d8dbd605565b417f6489a062d327881f72c814511eab5a4
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

@@ -1,6 +1,10 @@
 # Template file for 'kf6-kdeclarative'
 pkgname=kf6-kdeclarative
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml"
@@ -13,8 +17,13 @@ short_desc="KDE Integration of QML and KDE work spaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdeclarative"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=b01c7fa0272dd2cccc962a606e63328825bd3b8c8ec08ee36c3cea75fa8a314d
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=5262da2e5034ccd8aa624bd27f734eb013cdb7714b3e1a8697fa14b5f5e9bedf
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kdeclarative-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} kf6-kconfig-devel

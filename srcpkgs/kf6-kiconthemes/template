@@ -1,6 +1,10 @@
 # Template file for 'kf6-kiconthemes'
 pkgname=kf6-kiconthemes
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +18,13 @@ short_desc="KDE Icon GUI utilities"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kiconthemes"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=61b906051cd66db1dd259ec76d08885d3fe749e0d3947aea749021d2c96537a5
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=50af98734ceb7bd9a101a8a0ee02be79ed87b978d016fed17c078070596bd8ee
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kiconthemes-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel

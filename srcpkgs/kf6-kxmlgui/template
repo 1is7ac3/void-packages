@@ -1,6 +1,10 @@
 # Template file for 'kf6-kxmlgui'
 pkgname=kf6-kxmlgui
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 _llvmver=21
 build_style=cmake
@@ -16,8 +20,13 @@ short_desc="KDE Framework for managing menu and toolbar actions"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kxmlgui"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=a16fd3734112914ef50ed2666a16905d87e67954bc368725ccb1d5b2edc8f8f1
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=6810583ba35e753ba50086e843357aae151a280573704e3e9297c8265d24c749
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

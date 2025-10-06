@@ -1,6 +1,10 @@
 # Template file for 'kf6-kunitconversion'
 pkgname=kf6-kunitconversion
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 _llvmver=21
 build_style=cmake
@@ -13,8 +17,13 @@ short_desc="KDE Converting physical units"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kunitconversion"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=5ab4ee3853e77b0d6a69a66443724b09eaa6121ab835fed46d091d35e6feaa3f
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=aff5554c1808ea1f8a469004fc3dcbcaf5187b5e603cbd71f12b33a920815542
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

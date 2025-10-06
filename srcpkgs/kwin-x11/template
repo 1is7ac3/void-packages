@@ -1,6 +1,10 @@
 # Template file for 'kwin-x11'
 pkgname=kwin-x11
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -16,6 +20,7 @@ makedepends="qt6-tools-devel qt6-base-private-devel qt6-sensors-devel
  kf6-ki18n-devel kf6-kservice-devel kf6-kwidgetsaddons-devel
  kf6-kpackage-devel kf6-ksvg-devel kf6-kcmutils-devel kf6-knewstuff-devel
  kf6-kxmlgui-devel kf6-kdecoration-devel libdisplay-info-devel xorg-server-xwayland
+<<<<<<< HEAD
  plasma-wayland-protocols kscreenlocker-devel plasma-activities-devel
  libqaccessibilityclient-devel kf6-kdeclarative-devel kf6-kauth-devel
  qt6-qt5compat-devel libcap-devel breeze-qt6 aurorae kglobalacceld-devel
@@ -27,12 +32,23 @@ makedepends="qt6-tools-devel qt6-base-private-devel qt6-sensors-devel
  libei-devel libxkbcommon-devel kf6-knotifications-devel
  elogind-devel kf6-kdbusaddons-devel"
 depends="aurorae kf6-kirigami"
+=======
+ plasma-wayland-protocols kscreenlocker-devel plasma-activities-devel libqaccessibilityclient-devel
+ qt6-qt5compat-devel libcap-devel breeze-qt6 aurorae kglobalacceld-devel kf6-kauth-devel
+ kf6-kdbusaddons-devel knighttime-devel"
+depends="aurorae"
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 short_desc="KDE X11 window manager"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later AND MIT"
 homepage="https://invent.kde.org/plasma/kwin-x11"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=632e6b14c7d302b6efec62ab08426a924ca720cb6fb207f0f922e59f7f689256
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=95abd8b7e63a8532ced451192a1a813f343e2cd8ca306d0ab28f74dd0c64f3d3
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kwin-x11-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"

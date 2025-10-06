@@ -1,6 +1,10 @@
 # Template file for 'kmenuedit'
 pkgname=kmenuedit
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -13,5 +17,10 @@ short_desc="KDE Menu editor"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kmenuedit"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=8e61efc74f273f0d94c1e8d780dfe4aa2f50a6be9adea689a4367e0f22cccb55
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c782c880054169e4bd4a0d81ddd300c47743a6671b50e4e87a169209a07eccab
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

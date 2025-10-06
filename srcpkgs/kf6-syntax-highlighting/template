@@ -1,6 +1,10 @@
 # Template file for 'kf6-syntax-highlighting'
 pkgname=kf6-syntax-highlighting
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="
@@ -9,13 +13,18 @@ configure_args="
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base perl
  qt6-declarative-host-tools"
-makedepends="qt6-base-devel qt6-declarative-devel libxerces-c-devel"
+makedepends="qt6-base-private-devel qt6-declarative-private-devel libxerces-c-devel"
 short_desc="Syntax highlighting Engine for Structured Text and Code"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/syntax-highlighting"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=6e2862a3857c11e9a75accc6e3acfcc16f634ee878586b4d2a97b573f52bfdc0
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=a20e646d055698ad2c83e8c346f6c8aa49dd70915997dee7613638c27988caf9
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" kf6-syntax-highlighting-devel"

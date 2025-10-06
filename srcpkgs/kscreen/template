@@ -1,6 +1,10 @@
 # Template file for 'kscreen'
 pkgname=kscreen
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -17,5 +21,10 @@ short_desc="KDE screen management software"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/kscreen"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=9c814fd42f9730196fc0c9e6230a85bfc8004c0e5732b04879d35db4d7b9c468
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=6f684104ada474b0304c1247dcdedc33cffb1d4e78addbbfb8191fb114a9f7da
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

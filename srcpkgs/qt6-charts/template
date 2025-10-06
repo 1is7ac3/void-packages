@@ -1,6 +1,10 @@
 # Template file for 'qt6-charts'
 pkgname=qt6-charts
+<<<<<<< HEAD
 version=6.10.0
+=======
+version=6.9.2
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="perl qt6-declarative-host-tools"
@@ -11,7 +15,11 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtcharts-everywhere-src-${version}.tar.xz"
+<<<<<<< HEAD
 checksum=1bff529320e7bf4da19984d70492b19149168be58aa1e77b0868779fb3437f6b
+=======
+checksum=9f01f15f64e73f18ee8b17b490c1b0ca02e969bc58919cf46bd1152c01a4ff4b
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 subpackages="qt6-charts-private-devel qt6-charts-devel"
 

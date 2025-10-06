@@ -1,6 +1,10 @@
 # Template file for 'kf6-kconfigwidgets'
 pkgname=kf6-kconfigwidgets
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -12,8 +16,13 @@ short_desc="Widgets for KConfig"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kconfigwidgets"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=5c5e8dc7e986d85c3602b8a52b8d8909f91e7433ecad8037099491250f5f4e36
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=42175323f237f9ca2d1fc0ec2d28aa847127aeea609ab5b33bedd3ba45146355
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

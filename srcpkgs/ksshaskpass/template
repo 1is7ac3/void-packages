@@ -1,6 +1,10 @@
 # Template file for 'ksshaskpass'
 pkgname=ksshaskpass
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -11,6 +15,11 @@ short_desc="KDE ssh-add helper"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/ksshaskpass"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=e1cdacbdde464b772bc29bd520dde2503b54f7e24f6ac9ca3efd7ec9ca9d8c62
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9de25c296efe3ed300934626ed55d603cc833175f19fdb9c32d8a9efbdf0a614
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 alternatives="ssh-askpass:/usr/libexec/ssh-askpass:/usr/bin/ksshaskpass"

@@ -1,6 +1,10 @@
 # Template file for 'kf6-knotifications'
 pkgname=kf6-knotifications
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 _llvmver=21
@@ -17,8 +21,13 @@ short_desc="KDE Desktop notifications"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/knotifications"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=aae6d928eaf52540b642bd9c7ea6293e2c0d0f53612e5fb4f0a6001692f8055a
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=ab6794f52ccd078f51adb94e3a94825b53e190f758954afe72b2c38b0216e029
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

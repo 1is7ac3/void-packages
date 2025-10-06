@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 --- a/cmake/Functions.cmake
 +++ b/cmake/Functions.cmake
 @@ -25,7 +25,7 @@ function(get_install_config result)
@@ -7,5 +8,18 @@
 -            set(${result} "${CMAKE_CONFIGURATION_TYPES}" PARENT_SCOPE)
 +            set(${result} "RelWithDebInfo" PARENT_SCOPE)
          endif()
+=======
+--- a/cmake/QtToolchainHelpers.cmake.orig	2025-09-01 21:12:10.624286293 +0200
++++ b/cmake/QtToolchainHelpers.cmake	2025-09-01 21:12:12.071300756 +0200
+@@ -289,6 +289,11 @@
+             optimize_for_size=true
+             enable_mojom_message_id_scrambling=true
+         )
++    elseif(${config} STREQUAL "None")
++    		list(APPEND gnArgArg
++    				is_debug=false
++    				symbol_level=0
++    				enable_mojom_message_id_scrambling=true)
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
      endif()
  endfunction()

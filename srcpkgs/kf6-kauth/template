@@ -1,6 +1,10 @@
 # Template file for 'kf6-kauth'
 pkgname=kf6-kauth
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -12,8 +16,13 @@ short_desc="KDE Execute actions as privileged user"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kauth"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=a918455f42e169fa55e965e407588c22cb18beb5529dab321d45acafdb7bd652
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=3a5da683e269aa084a43295abebd6f22d1afa608f1942fbca11270c53542642f
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 subpackages="kf6-kauth-tools kf6-kauth-devel"
 
 do_check() {

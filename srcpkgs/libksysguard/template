@@ -1,6 +1,10 @@
 # Template file for 'libksysguard'
 pkgname=libksysguard
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -24,8 +28,21 @@ short_desc="KDE libksysguard"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/libksysguard"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=4d23a22871ca947cf6fcba21e3bc4d1abd16aabb2f721199dfa34fd33f8945fb
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9f5e8a5e1ccc2878ceca2f24b1387c944f1fed00c1a54fd90f560e2d583a7d1d
+
+build_options="webengine"
+
+if [ "$XBPS_TARGET_ENDIAN" = "le" ] &&
+	[ "$XBPS_WORDSIZE" = 64 ] &&
+	[ "$XBPS_TARGET_WORDSIZE" = "$XBPS_WORDSIZE" ]; then
+		build_options_default=webengine
+fi
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

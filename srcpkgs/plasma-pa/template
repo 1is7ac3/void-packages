@@ -1,6 +1,10 @@
 # Template file for 'plasma-pa'
 pkgname=plasma-pa
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake -Wno-dev
@@ -19,5 +23,10 @@ short_desc="PulseAudio Plasma applet"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/plasma-pa"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=85178649dfb37f65d838de54151b13f0a145c417acc879b53f62f4a6d2f041a1
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=b7f3b428e5e69e2cbf3049b26d4e534b245a2dd58c364aa806a835cdff68f71a
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

@@ -1,6 +1,10 @@
 # Template file for 'powerdevil'
 pkgname=powerdevil
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -21,5 +25,10 @@ short_desc="Power consumption settings of a Plasma"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/powerdevil"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=7cfeb08beb3cc44ac6ae525613cdf40855dd1137083b050dc5e65d3764cbf4cb
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c6a05ea9307badfc2d6d06abbc770aa2bd2035b3b2121fd015675bd384d0a12e
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

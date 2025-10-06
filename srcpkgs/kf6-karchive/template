@@ -1,6 +1,10 @@
 # Template file for 'kf6-karchive'
 pkgname=kf6-karchive
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -11,8 +15,13 @@ short_desc="Qt addon providing access to numerous types of archives"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/karchive"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=f6a508d537d283e2a106e848a939e971cdf1a059779825e4482609aa981ffadd
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c424c7edca1ae93235869906233350a9469f37a00753a6a313c47b22702d8868
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-karchive-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

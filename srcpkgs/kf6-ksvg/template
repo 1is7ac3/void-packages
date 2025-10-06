@@ -1,6 +1,10 @@
 # Template file for 'kf6-ksvg'
 pkgname=kf6-ksvg
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +18,13 @@ short_desc="Components for handling SVGs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/ksvg"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=7ff41cf18af9d1aa4862a52e9151e0a1968099f71da07da8454d880d676956a8
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=2d80391c09e4b20de619e1159be01585da107cfbf8b4a22e3ded47241f58fc10
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-ksvg-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

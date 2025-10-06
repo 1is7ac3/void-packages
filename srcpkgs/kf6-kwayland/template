@@ -1,6 +1,10 @@
 # Template file for 'kf6-kwayland'
 pkgname=kf6-kwayland
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,8 +16,13 @@ short_desc="Qt-style client and server library wrapper for Wayland libraries"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/kwayland"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/kwayland-${version}.tar.xz"
 checksum=aa63e3753e241f3955eb806ae91af1f3963e42ec731f2b8a2330119b65cb557a
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=0a08daad8a9c4de127819fc4d11176477b598b9bd2a3af76f49e106fe26669ed
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kwayland-devel_package() {
 	short_desc+=" - development"

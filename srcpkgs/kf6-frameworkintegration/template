@@ -1,6 +1,10 @@
 # Template file for 'kf6-frameworkintegration'
 pkgname=kf6-frameworkintegration
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -15,8 +19,13 @@ short_desc="Framework to integrate applications with a KDE Workspace"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/frameworkintegration"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=1ee61c92c1214159877c0e113a92358724f9ac3ee57710a15038c85dc4fdc7d8
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=843d06baea7e3028c2d255cacb5e6e89fe8ede4ab01295b68b1543c079a12706
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-frameworkintegration-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}

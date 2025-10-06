@@ -1,6 +1,10 @@
 # Template file for 'kf6-kfilemetadata'
 pkgname=kf6-kfilemetadata
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
@@ -13,8 +17,13 @@ short_desc="Library for extracting file metadata"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kfilemetadata"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=3316505dc826cede409c6062ce87ca17680147a760544036c31739fbf7557f97
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=12bf16b96adf065826df025a7babdbfca211382fabfbbd94d340513c6d3bc67f
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

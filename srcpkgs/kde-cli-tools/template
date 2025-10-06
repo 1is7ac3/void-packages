@@ -1,6 +1,10 @@
 # Template file for 'kde-cli-tools'
 pkgname=kde-cli-tools
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -17,8 +21,13 @@ short_desc="KDE CLI tools"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later, GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kde-cli-tools"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=834f1da71ec6f9eb2d0560218080a0f02a00cd6609c9ed5464011700c28a0a1c
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=2b5a97f05de5c6ccfdac712d74ed0729f10fb1d2ebd21fc6fe14d48d132c52a7
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 post_install() {
 	ln -sf ../libexec/kf6/kdesu ${DESTDIR}/usr/bin

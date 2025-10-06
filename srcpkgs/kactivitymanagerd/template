@@ -1,6 +1,10 @@
 # Template file for 'kactivitymanagerd'
 pkgname=kactivitymanagerd
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
@@ -11,5 +15,10 @@ short_desc="Manage user's activities and track the usage patterns"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kactivitymanagerd"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=9332b5f0fc86f806a480bb45112693a83df906db8eaddc2417459e9a6d7cdf6d
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=81170120ee6fde755985ae3639e6d9ef85867fd3a457624f634e3786eebbcd84
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

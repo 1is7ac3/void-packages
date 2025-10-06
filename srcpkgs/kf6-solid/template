@@ -1,6 +1,10 @@
 # Template file for 'kf6-solid'
 pkgname=kf6-solid
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base flex pkg-config"
@@ -12,8 +16,13 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/solid"
 #changelog=""
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=0328381845a11cfcfa8c18c8d60c9df7b85a07bcd7b1bd36b71c7eb3cc3492d6
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=1e7d407a413724eb03a628b1a468b30cc29e889744afd6375a9130500d89503c
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-solid-devel_package() {
 	depends="qt6-base-devel ${sourcepkg}>=${version}_${revision}"

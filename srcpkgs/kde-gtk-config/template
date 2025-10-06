@@ -1,6 +1,10 @@
 # Template file for 'kde-gtk-config'
 pkgname=kde-gtk-config
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -16,8 +20,13 @@ short_desc="GTK+3 Configurator for KDE"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/kde-gtk-config"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=cc37cd3401be0ce676663c8ba21413f7a3fb32c73b684f22d172a62ade4e8d29
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=02e76a0ce5e674e8991509160ea750947b6c511db550498a79d0b9356e2eb563
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kde-gtk-config5_package() {
 	short_desc+=" - (Dummy transitional package)"

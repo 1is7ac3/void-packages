@@ -1,6 +1,10 @@
 # Template file for 'kf6-kwallet'
 pkgname=kf6-kwallet
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -14,8 +18,13 @@ short_desc="KWallet: Credential Storage"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kwallet"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=b6565ad041a57d390b3728a6599fc0e339784d2a4dab5990ace45abaa502e41e
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c9e37b8847f2005742f644d11d4d7ed1f29d36e6f415dfe2aa1a849a998a48b0
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kwallet-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

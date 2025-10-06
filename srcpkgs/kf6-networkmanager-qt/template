@@ -1,18 +1,27 @@
 # Template file for 'kf6-networkmanager-qt'
 pkgname=kf6-networkmanager-qt
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
  pkg-config qt6-declarative-host-tools"
-makedepends="qt6-declarative-devel NetworkManager-devel"
+makedepends="qt6-declarative-private-devel qt6-base-private-devel NetworkManager-devel"
 short_desc="Qt wrapper for NetworkManager API"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/networkmanager-qt"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=6856fecb2933abcdad0a789a179e4054cf24901dc29f943f0036a3e15cf43e86
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=bb0499bd168643aaabf107ea4be35088e459c792396ecf07875d5681f7e42bbe
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

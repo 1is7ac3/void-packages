@@ -1,6 +1,10 @@
 # Template file for 'kf6-kcontacts'
 pkgname=kf6-kcontacts
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml"
@@ -12,8 +16,13 @@ short_desc="Library for working with contact information"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcontacts"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=b253cd4864a3f3d4343485cc4bfe1b0344ccf5136ead2ada359e6933e09253de
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=d34dc6a2284d9e5d3488baad61108416a0e90a98f8b6c5ae155f3a12a7496f9e
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

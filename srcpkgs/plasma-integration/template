@@ -1,6 +1,10 @@
 # Template file for 'plasma-integration'
 pkgname=plasma-integration
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DBUILD_QT5=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -18,5 +22,10 @@ short_desc="Theme integration plugins for the Plasma workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/plasma-integration"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=8a13fcfd5a61cf9ff683754fe7013e24f2285b8f39f6799ba1df7bc9ee5f7ee4
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=bdd65f1c6b23b421642cb8d42b6de1b39916d354b9a5cd5e6a9ab14ad531fa7b
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

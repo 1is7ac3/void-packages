@@ -1,6 +1,10 @@
 # Template file for 'qt6-multimedia'
 pkgname=qt6-multimedia
+<<<<<<< HEAD
 version=6.10.0
+=======
+version=6.9.2
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DQT_FEATURE_gstreamer=ON"
@@ -14,7 +18,11 @@ maintainer="John <me@johnnynator.dev>"
 license="(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND GPL-3.0-only WITH Qt-GPL-exception-1.0"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtmultimedia-everywhere-src-${version}.tar.xz"
+<<<<<<< HEAD
 checksum=04424021cf0d1d19799f5967310d484d1afa6fdd0b31725d0ee7608d2eef1126
+=======
+checksum=7bf8a19a57a7432181b05d0e264acfd8ca4b75a3901d01a27a32935703e5ab12
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 if [ "$XBPS_MACHINE" = "i686" ]; then
 	CXXFLAGS="-DPFFFT_SIMD_DISABLE=1 -DDISABLE_SIMD=1"

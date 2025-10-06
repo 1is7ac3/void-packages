@@ -1,6 +1,10 @@
 # Template file for 'extra-cmake-modules'
 pkgname=extra-cmake-modules
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_HTML_DOCS=ON -DBUILD_TESTING=ON"
@@ -11,8 +15,13 @@ short_desc="Extra modules and scripts for CMake"
 maintainer="John <me@johnnynator.dev>"
 license="BSD-3-Clause"
 homepage="https://invent.kde.org/frameworks/extra-cmake-modules"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
 checksum=3711de8572db5da618efe3f28cc094ca25a1abb0bddffc63dced12c4f8caae5f
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=d60d86dbf4a843f28be9084ac6044aba6fc01530b467a5d6146d6779c629dc0b
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 python_version=3
 
 do_check() {

@@ -1,6 +1,10 @@
 # Template file for 'plasma-thunderbolt'
 pkgname=plasma-thunderbolt
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -14,8 +18,13 @@ short_desc="Plasma integration for controlling Thunderbolt devices"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"
 homepage="https://invent.kde.org/plasma/plasma-thunderbolt"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=576ddbef8e8e3fa44d090c23dc3bd3e5e725824af9221fdd535ad48fa27f97b0
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c3f689acc8cfa402314fa67730a3759e2a9ec71d5e494bd3c35fc010b507166e
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	: # Requires running dbus and bolt services

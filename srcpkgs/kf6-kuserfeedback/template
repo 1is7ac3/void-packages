@@ -1,6 +1,10 @@
 # Template file for 'kf6-kuserfeedback'
 pkgname=kf6-kuserfeedback
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -8,13 +12,18 @@ configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
  qt6-declarative-host-tools flex bison"
-makedepends="qt6-base-devel qt6-declarative-devel qt6-charts-devel"
+makedepends="qt6-base-private-devel qt6-declarative-private-devel qt6-charts-devel"
 short_desc="Framework for collecting user feedback via telemetry and surveys"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kuserfeedback"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=638cd4e92137284de18620945441447391173a4f6785baa9e6b83855bba808b4
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=750c9f2d73404e055559a275e8504e1f8096b2de9669b8ad943fd997ae1f4b1a
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

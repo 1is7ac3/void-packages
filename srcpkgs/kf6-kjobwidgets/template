@@ -1,6 +1,10 @@
 # Template file for 'kf6-kjobwidgets'
 pkgname=kf6-kjobwidgets
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 _llvmver=21
@@ -14,8 +18,13 @@ short_desc="Widgets for showing progress of asynchronous jobs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kjobwidgets"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=393b6eb6b35d680d48a5c7b09359668bddc1ed89d4fa70b8a8a81fb2d841ce7a
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=35a91bce9a11de5f06a70dd8ab72f8bb25c1ca7f5b26820d3fec3dbc7cab7c8d
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

@@ -1,6 +1,10 @@
 # Template file for 'kf6-kcmutils'
 pkgname=kf6-kcmutils
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -15,8 +19,13 @@ short_desc="Utilities for interacting with KCModules"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcmutils"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=a2d726c7b6b8feaddff29dc0e75e1c15467f02d1ebe6f8e96f35cd84b23e16ed
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=70ff829f29dabb36a69d97ab511378f5e4dbf0c67ac591f17e625fd8f3dfea58
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kcmutils-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}

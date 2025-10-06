@@ -1,6 +1,10 @@
 # Template file for 'kf6-kwidgetsaddons'
 pkgname=kf6-kwidgetsaddons
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 _llvmver=21
 build_style=cmake
@@ -14,8 +18,13 @@ short_desc="KWidgetsAddons"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kwidgetsaddons"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=39974b85cdffd8c6d6e0a5c0684927a21e071c1e63d7cce3888331f0169a4837
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=886e15035056f87251b226e861e156738d89853aff0b5aa428340c1e3cd9a422
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

@@ -1,6 +1,10 @@
 # Template file for 'kf6-kservice'
 pkgname=kf6-kservice
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -12,8 +16,13 @@ short_desc="KDE Plugin framework for desktop services"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kservice"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=c33a5bcd2ce154e275ef9445901a2813c24943e24eaf2382d24865717892353c
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=66a55d2cca8045f9ecf4bee4c1a2dda0b69c5163d3df6aab0c9bf33384588da6
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

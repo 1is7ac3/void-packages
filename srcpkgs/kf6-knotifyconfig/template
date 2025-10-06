@@ -1,6 +1,10 @@
 # Template file for 'kf6-knotifyconfig'
 pkgname=kf6-knotifyconfig
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -12,8 +16,13 @@ short_desc="KDE Configuration dialog for desktop notification"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/knotifyconfig"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=a02196e50f48dad0908656e3245d58bf03b0d39102fa92b056bee7d50b91afa7
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=b3b64df6fd11e44de4800b8002f6665fa03caeb99f4562b6ea7f8bdacb3596b3
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-knotifyconfig-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel"

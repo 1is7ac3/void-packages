@@ -1,6 +1,10 @@
 # Template file for 'kf6-purpose'
 pkgname=kf6-purpose
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -16,8 +20,13 @@ short_desc="Offers available actions for a specific purpose"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/purpose"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=3a33a069534f5cfcd751e67b7dc37785f3b8ec9d027cf1d7a0d42f0ffbfc9857
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=b26fecc4ecfa0a27d9743341b516cac215daf646930494764f1cf588c5a8a67c
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-purpose-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} kf6-kcoreaddons-devel"

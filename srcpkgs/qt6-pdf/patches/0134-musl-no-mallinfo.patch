@@ -63,7 +63,11 @@ musl does not implement mallinfo()/mallinfo2()
  #endif
 --- a/src/3rdparty/chromium/base/allocator/partition_allocator/src/partition_alloc/shim/allocator_shim_default_dispatch_to_partition_alloc.cc
 +++ b/src/3rdparty/chromium/base/allocator/partition_allocator/src/partition_alloc/shim/allocator_shim_default_dispatch_to_partition_alloc.cc
+<<<<<<< HEAD
 @@ -743,7 +743,7 @@ SHIM_ALWAYS_EXPORT int mallopt(int cmd,
+=======
+@@ -660,7 +660,7 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  
  #endif  // !PA_BUILDFLAG(IS_APPLE) && !PA_BUILDFLAG(IS_ANDROID)
  
@@ -74,7 +78,11 @@ musl does not implement mallinfo()/mallinfo2()
    Allocator()->DumpStats("malloc", true, &allocator_dumper);
 --- a/src/3rdparty/chromium/base/allocator/partition_allocator/src/partition_alloc/shim/allocator_shim_default_dispatch_to_partition_alloc_unittest.cc
 +++ b/src/3rdparty/chromium/base/allocator/partition_allocator/src/partition_alloc/shim/allocator_shim_default_dispatch_to_partition_alloc_unittest.cc
+<<<<<<< HEAD
 @@ -29,7 +29,7 @@ namespace allocator_shim::internal {
+=======
+@@ -29,7 +29,7 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  #if PA_BUILDFLAG(USE_PARTITION_ALLOC_AS_MALLOC)
  
  // Platforms on which we override weak libc symbols.

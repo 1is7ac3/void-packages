@@ -1,6 +1,10 @@
 # Template file for 'kgamma'
 pkgname=kgamma
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -13,8 +17,13 @@ short_desc="KDE gamma adjustiment app"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kgamma"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=538353ffcdfb7e6d66e16b1a3fafffa478b293c7d57656ca71016f2aeb782eee
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=fe6688079dd54a0c089203192d65fe367442c0d42554e368a497b8b877cc9eb6
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kgamma5_package() {
 	metapackage=yes

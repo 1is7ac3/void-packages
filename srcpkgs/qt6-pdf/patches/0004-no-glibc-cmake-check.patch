@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 --- a/configure.cmake
 +++ b/configure.cmake
 @@ -370,13 +370,6 @@ qt_webengine_configure_check("pkg-config
+=======
+--- a/configure.cmake	2025-08-18 02:53:11.000000000 +0200
++++ -	2025-09-01 21:15:49.553587113 +0200
+@@ -369,13 +369,6 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
      DOCUMENTATION "A pkg-config binary on Linux."
      TAGS LINUX_PLATFORM
  )

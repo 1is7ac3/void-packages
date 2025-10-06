@@ -26,7 +26,11 @@ for discussion about this, see https://www.openwall.com/lists/musl/2021/07/16/1
    // The array of names is malloc'ed. However, each name string is static
 --- a/src/3rdparty/chromium/base/debug/stack_trace.cc
 +++ b/src/3rdparty/chromium/base/debug/stack_trace.cc
+<<<<<<< HEAD
 @@ -329,7 +329,7 @@ std::string StackTrace::ToString() const
+=======
+@@ -311,7 +311,7 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  
  std::string StackTrace::ToStringWithPrefix(cstring_view prefix_string) const {
    std::stringstream stream;
@@ -35,7 +39,11 @@ for discussion about this, see https://www.openwall.com/lists/musl/2021/07/16/1
    OutputToStreamWithPrefix(&stream, prefix_string);
  #endif
    return stream.str();
+<<<<<<< HEAD
 @@ -353,7 +353,7 @@ bool StackTrace::ShouldSuppressOutput()
+=======
+@@ -335,7 +335,7 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  }
  
  std::ostream& operator<<(std::ostream& os, const StackTrace& s) {

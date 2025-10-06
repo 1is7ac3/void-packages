@@ -1,6 +1,10 @@
 # Template file for 'systemsettings'
 pkgname=systemsettings
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -22,5 +26,10 @@ short_desc="KDE System settings"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, GFDL-1.2-only"
 homepage="https://invent.kde.org/plasma/systemsettings"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=f6f3b2192160f08c829c00fe4c0315f9c06288d4c4daf287141e11e83d8a4bce
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=6b645271bc0bc39bbde0a85e9562b46b4f032794c201a7e901588e1d43f00767
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

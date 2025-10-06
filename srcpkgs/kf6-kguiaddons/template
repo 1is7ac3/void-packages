@@ -1,24 +1,40 @@
 # Template file for 'kf6-kguiaddons'
 pkgname=kf6-kguiaddons
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 _llvmver=21
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  $(vopt_bool python BUILD_PYTHON_BINDINGS)"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
+<<<<<<< HEAD
  $(vopt_if python "shiboken6 python3-build python3-setuptools llvm${_llvmver}")
  wayland-devel pkg-config qt6-declarative-host-tools"
 makedepends="plasma-wayland-protocols wayland-devel
  qt6-declarative-devel qt6-base-private-devel
+=======
+ $(vopt_if python 'shiboken6 llvm python3-build python3-setuptools')
+ wayland-devel pkg-config qt6-declarative-host-tools qt6-wayland-tools"
+makedepends="qt6-wayland-devel plasma-wayland-protocols wayland-devel
+ qt6-declarative-private-devel qt6-base-private-devel
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  $(vopt_if python 'libshiboken6-devel libpyside6-devel python3-devel')"
 depends="kf6-kguiaddons-geo-uri-handler"
 short_desc="Addons to QtGui"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kguiaddons"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=33caf5ae46f1a6214f56596180e0c6ccb4af2cce0dcae060ae4fb7078260a476
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=a8825855091aa531212427da9516d5ad4ba18637f70e3ace9bc933fd795e2a58
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 build_options="python"
 build_options_default="python"

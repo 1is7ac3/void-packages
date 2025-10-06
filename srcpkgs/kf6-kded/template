@@ -1,6 +1,10 @@
 # Template file for 'kf6-kded'
 pkgname=kf6-kded
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -12,8 +16,13 @@ short_desc="KDE Daemon"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kded"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=1d6c950048e05b9e8038cfdf84963d1d4b8bfc5f326f301e743211791e9a9f65
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=340099998c73a22032c2df2bb9f8eac187fb9bec9c4a7f39bcb2bf4f1c4e4a90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kded-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

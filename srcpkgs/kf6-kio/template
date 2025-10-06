@@ -1,6 +1,10 @@
 # Template file for 'kf6-kio'
 pkgname=kf6-kio
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -19,8 +23,13 @@ short_desc="KDE Network transparent access to files and data"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kio"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=7e67d471fc10b7df3d76e6ce859480be5d6e675d316592e7a8419b97f01bd649
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=22ca5a60bef5e96839af3a2e213a505d3674a34e9ce27b23e22fd2a106999b0e
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

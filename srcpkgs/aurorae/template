@@ -23,5 +23,9 @@ distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=f38d5855cffa9d7a29fa803934bba7c8a6847243ef773b55f223e864b79d98d3
 =======
 distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+<<<<<<< HEAD
 checksum=cad1c8bf98f3f4863d3967dc874d190f2660e9706f1cc38fd493d9cc83da2096
 >>>>>>> b6d0d6c1723 (aurorae: update to 6.90.)
+=======
+checksum=2a5cd5f559a7ccbf213d288c30678918deac977df62cb52ba0c066604facdb9a
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

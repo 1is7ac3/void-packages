@@ -1,7 +1,12 @@
 # Template file for 'plasma-workspace'
 pkgname=plasma-workspace
+<<<<<<< HEAD
 version=6.5.2
 revision=3
+=======
+version=6.90
+revision=1
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner
@@ -23,6 +28,7 @@ makedepends="qt6-declarative-devel libplasma-devel qt6-base-private-devel
  kscreenlocker-devel plasma-wayland-protocols qt6-position-devel
  kf6-kuserfeedback-devel phonon-devel polkit-qt6-devel qt6-base-private-devel
  kpipewire-devel kirigami-addons-devel libkexiv2-devel qcoro-qt6-devel
+<<<<<<< HEAD
  layer-shell-qt-devel kf6-karchive-devel kf6-kauth-devel kf6-kcoreaddons-devel
  kf6-kcrash-devel kf6-kdbusaddons-devel kf6-kglobalaccel-devel
  kf6-kguiaddons-devel kf6-ki18n-devel kf6-kiconthemes-devel kf6-kio-devel
@@ -35,14 +41,22 @@ makedepends="qt6-declarative-devel libplasma-devel qt6-base-private-devel
  xcb-util-cursor-devel xcb-util-image-devel qt6-shadertools-devel
  qt6-qt5compat-devel qt6-declarative-private-devel"
 # qt6-tools for qdbus
+=======
+ qt6-qt5compat-devel qt6-declarative-private-devel knighttime-devel"
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 depends="kactivitymanagerd kwin iso-codes milou plasma-integration kpipewire
  xorg-server-xwayland qt6-tools kf6-kquickcharts kirigami-addons"
 short_desc="KDE Plasma Workspace"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, GFDL-1.2-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/plasma-workspace"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=8bf7fa53b33e27448e2b151f5fc086cecc5d7f5163c4a9d8f13875e5676e0ba6
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=d64a139d1e8f538e25cadedef3d76362b9886707880465629c38de4f9e379c21
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 if [ "$XBPS_TARGET_LIBC" = "glibc" ]; then
 	makedepends+=" libxcrypt-devel"

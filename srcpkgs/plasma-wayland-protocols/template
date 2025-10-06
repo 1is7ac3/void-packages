@@ -9,6 +9,7 @@ short_desc="Plasma Specific Protocols for Wayland"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"
 homepage="https://invent.kde.org/libraries/plasma-wayland-protocols"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/${pkgname}/${pkgname}-${version}.tar.xz"
 checksum=45679fe7a63c414f2c81793a62528fae6ccee584b6965719d7f9fc6dd48ba846
 
@@ -16,3 +17,7 @@ post_install() {
 	vsed -e '/NOT CMAKE_SIZEOF_VOID_P STREQUAL/,+5d' \
 		-i ${DESTDIR}/usr/lib/cmake/PlasmaWaylandProtocols/PlasmaWaylandProtocolsConfigVersion.cmake
 }
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=22ed4ce61954746bda46dca9c932e0f1824eeea2d1fc7dc49cfda7ad214c875b
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

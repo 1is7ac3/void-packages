@@ -1,6 +1,10 @@
 # Template file for 'kf6-kpeople'
 pkgname=kf6-kpeople
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +17,13 @@ short_desc="Library that provides access to all contacts and people who hold the
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kpeople"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=72f7751d589e7d7204665a1adf8751abdbdbd6e4b582662c313ec79ddb013fb2
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=dd6d64170af9d374b6faf7a5253cdbcc49e37a7569668d0a81049ac56ab95125
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

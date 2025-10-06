@@ -97,7 +97,11 @@
  }
 --- a/tests/auto/qml/debugger/qqmlpreview/tst_qqmlpreview.cpp
 +++ b/tests/auto/qml/debugger/qqmlpreview/tst_qqmlpreview.cpp
+<<<<<<< HEAD:srcpkgs/qt6-declarative/patches/100-bin-qml-location.patch
 @@ -63,7 +63,11 @@ tst_QQmlPreview::tst_QQmlPreview()
+=======
+@@ -63,7 +63,11 @@
+>>>>>>> 162bf86fd4f (switch to alpha branch kde):srcpkgs/qt6-declarative/patches/bin-qml-location.patch
  
  QQmlDebugTest::ConnectResult tst_QQmlPreview::startQmlProcess(const QString &qmlFile, QStringList environmentVariables)
  {
@@ -151,7 +155,7 @@
      qmlplugindumpPath += QLatin1String("/qmlplugindump.exe");
 --- a/tests/auto/qml/debugger/qqmldebugjs/tst_qqmldebugjs.cpp
 +++ b/tests/auto/qml/debugger/qqmldebugjs/tst_qqmldebugjs.cpp
-@@ -163,11 +163,18 @@ void tst_QQmlDebugJS::initTestCase()
+@@ -163,11 +163,19 @@
      QQmlDebugTest::initTestCase();
  }
  
@@ -162,6 +166,7 @@
 +        return QString(build_bin_path) + "/qmlscene";
 +    return QLibraryInfo::path(QLibraryInfo::BinariesPath) + "/qmlscene";
 +}
++
  QQmlDebugTest::ConnectResult tst_QQmlDebugJS::runAndConnect(bool qmlscene, const QString &qmlFile,
                                                     bool blockMode, bool restrictServices)
  {

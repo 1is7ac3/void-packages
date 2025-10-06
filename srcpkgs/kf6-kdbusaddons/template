@@ -1,6 +1,10 @@
 # Template file for 'kf6-kdbusaddons'
 pkgname=kf6-kdbusaddons
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base "
@@ -10,8 +14,13 @@ short_desc="KDE Convenience classes for DBus"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdbusaddons"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=5db2f6b7235238070224ee8a5225f41ffdb3249d558a81a7c06a8e54d67729f7
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=36efcd139267b9be40675a8f2addef9f4f24b62831ceaf2b1313a4989374a174
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 make_check_pre="dbus-run-session"
 
 kf6-kdbusaddons-devel_package() {

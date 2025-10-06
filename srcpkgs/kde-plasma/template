@@ -1,6 +1,10 @@
 # Template file for 'kde-plasma'
 pkgname=kde-plasma
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 metapackage=yes
 depends="bluedevil>=${version}

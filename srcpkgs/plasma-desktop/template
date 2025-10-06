@@ -1,6 +1,10 @@
 # Template file for 'plasma-desktop'
 pkgname=plasma-desktop
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -21,7 +25,7 @@ makedepends="kf6-kauth-devel kf6-kcrash-devel kf6-kdoctools-devel
  plasma5support-devel libplasma-devel plasma-activities-devel
  plasma-activities-stats-devel kf6-kaccounts-integration-devel
  libaccounts-qt6-devel signon-plugin-oauth2 SDL2-devel plasma-workspace-devel
- ibus-devel libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
+ libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
  xf86-input-evdev-devel xf86-input-libinput-devel qt6-base-private-devel
  qt6-shadertools-devel qt6-declarative-devel qt6-svg-devel
  libksysguard-devel kf6-kded-devel kf6-baloo-devel libX11-devel
@@ -36,7 +40,12 @@ short_desc="KDE Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, LGPL-2.1-or-later, GFDL-1.2-or-later"
 homepage="https://invent.kde.org/plasma/plasma-desktop"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=b0b2b3351fc8e6f53f0673e7bb4e0772d9df620e9d3de65e651d3d70306c7a58
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=42a1d9606115d69583e99f05aebecc858502aed23185705cc90062028288a7bd
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 replaces="user-manager>=0"
 python_version=3

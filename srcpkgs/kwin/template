@@ -1,6 +1,10 @@
 # Template file for 'kwin'
 pkgname=kwin
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -21,19 +25,28 @@ makedepends="libplasma-devel kf6-kcmutils-devel kf6-knewstuff-devel
  libSM-devel libICE-devel xcb-util-wm-devel qt6-sensors-devel lcms2-devel
  pipewire-devel kf6-krunner-devel xorg-server-xwayland libxcvt-devel hwids
  libdisplay-info-devel breeze-qt6 kf6-kwayland-devel libcap-devel
+<<<<<<< HEAD
  libqaccessibilityclient-devel kf6-kirigami-devel qt6-svg-devel
  kf6-kcolorscheme-devel kf6-kcrash-devel knighttime-devel kf6-kxmlgui-devel
  kf6-kdeclarative-devel libcanberra-devel kf6-knotifications-devel
  kf6-kglobalaccel-devel kf6-kguiaddons kf6-ki18n-devel kf6-kidletime-devel
  kf6-kservice-devel kf6-ksvg-devel kf6-kwidgetsaddons-devel
+=======
+ libqaccessibilityclient-devel kf6-kirigami-devel knighttime-devel
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
  kf6-kpackage-devel kf6-kauth-devel kf6-kconfig-devel aurorae"
 depends="breeze-qt6 hicolor-icon-theme kglobalacceld hwids libcap-progs aurorae"
 short_desc="KDE Window manager"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kwin"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=3be0d569fe342daddee859bab6aefda32d7056b601e84038e8af92593f140774
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=7656bf39d70eb1b7dc230e5dcde9712705c2b21e5932d3ec47b14c55982e0643
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 replaces="kwayland-server>=0"
 
 kwin-devel_package() {

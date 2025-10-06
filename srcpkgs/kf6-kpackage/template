@@ -1,6 +1,10 @@
 # Template file for 'kf6-kpackage'
 pkgname=kf6-kpackage
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base kf6-kdoctools
@@ -11,8 +15,13 @@ short_desc="Aplications to manage user installable packages of non-binary assets
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kpackage"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=61884114af604f827c4b83634551ea64921050e233c9c6d5fc400b97e402529e
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=4194db6fc2bbc02a4b4b61390f9fbc4ba0a131ce51b325a3b82f8c52a041c309
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kpackage-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

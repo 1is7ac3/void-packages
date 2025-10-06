@@ -1,6 +1,10 @@
 # Template file for 'kf6-krunner'
 pkgname=kf6-krunner
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -12,8 +16,13 @@ short_desc="Framework for providing different actions given a string query"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/krunner"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=735b2cf153ed1bd223389f29b4b619319fbb310071dac6c7e9fadda1195d3a1c
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=ae618c8905a4fd18e74a39ce7f1e894056ef61cb0a90682cbb46ac7f74647442
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

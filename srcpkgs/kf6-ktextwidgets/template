@@ -1,6 +1,10 @@
 # Template file for 'kf6-ktextwidgets'
 pkgname=kf6-ktextwidgets
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -12,8 +16,13 @@ short_desc="KDE Text editing widgets"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/ktextwidgets"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=781e7fad5720de7f31380b2c4a458bc2875940449ed9168b48c60d474b6df220
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=0602fe0b33f4c3320c55721ec624191b757c9b5118ae2d89eecfda524e62b5d8
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-ktextwidgets-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

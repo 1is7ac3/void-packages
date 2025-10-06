@@ -1,6 +1,10 @@
 # Template file for 'kf6-baloo'
 pkgname=kf6-baloo
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -15,8 +19,13 @@ short_desc="Framework for searching and managing metadata"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/baloo"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=06a0dc24b9cae08c7228aebc3215185042b58c4fc58ef86c8863e577493d1314
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=f803da36916fd6fea04ecc52438ba9d93ddea2571f491a8c5aa70b319191b384
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

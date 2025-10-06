@@ -1,6 +1,10 @@
 # Template file for 'kwrited'
 pkgname=kwrited
+<<<<<<< HEAD
 version=6.5.2
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
@@ -10,5 +14,10 @@ short_desc="KDE daemon listening for wall and write messages"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kwrited"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=00955f29ac706cceaa603873f3434743956dac444d1c90d8527aa3f3b32b0989
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=0720ee8a6e9704996c1d09e4a8c74e8318e4b6a78693ecf44aec820ef3d146c3
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)

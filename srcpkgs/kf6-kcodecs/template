@@ -1,6 +1,10 @@
 # Template file for 'kf6-kcodecs'
 pkgname=kf6-kcodecs
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -10,8 +14,13 @@ short_desc="Collection of methods to manipulate strings using various encodings"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcodecs"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=15920b9a859341b13831e6ed49baceea2e728c796fdd082128e51f8e127ff3a0
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=227c0529b3278a9067c010b168c68e875a9e451844fd22cddbf91d36d2b7219e
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kcodecs-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

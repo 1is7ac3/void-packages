@@ -1,6 +1,10 @@
 # Template file for 'kf6-kimageformats'
 pkgname=kf6-kimageformats
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 configure_args="-DKIMAGEFORMATS_HEIF=ON -DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +17,13 @@ short_desc="KDE Plugins to allow QImage to support extra file formats"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kimageformats"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=bdbd91f01b88b61bc5b3e7f60153ae8b63d5f1f2840e9eb31ae8b7339f7b8d79
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=02ca19cce800006490acbad627cc0ab423bead0cd36799b926f0a7f4b4965fc8
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 do_check() {
 	cd build

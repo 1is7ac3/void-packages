@@ -1,6 +1,10 @@
 # Template file for 'kf6-kdesu'
 pkgname=kf6-kdesu
+<<<<<<< HEAD
 version=6.20.0
+=======
+version=6.90
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -11,8 +15,13 @@ short_desc="KDE User interface for running shell commands with root privileges"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdesu"
+<<<<<<< HEAD
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=de2313f42f57b8969faff133f0e2b214c5ba96891c16164512130fccb5f3fb84
+=======
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9711335fb9f880e664f9483bad34bf709ae7cb6f308301b611ca46749b3a1072
+>>>>>>> 162bf86fd4f (switch to alpha branch kde)
 
 kf6-kdesu-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} kf6-kpty-devel qt6-base-devel"
