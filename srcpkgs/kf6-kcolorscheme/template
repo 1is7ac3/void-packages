@@ -1,6 +1,6 @@
 # Template file for 'kf6-kcolorscheme'
 pkgname=kf6-kcolorscheme
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -11,8 +11,8 @@ short_desc="Classes to read and interact with KColorScheme"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcolorscheme"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=14e99e74cc636640ac8d705f2878d72d0379fff671e75c0f138302489898d651
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9be7d79b93416323fe9c58a6b6e34a163569fbcd4560191fe87dbc84655e3cba
 
 kf6-kcolorscheme-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

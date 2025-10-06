@@ -1,6 +1,6 @@
 # Template file for 'libksysguard'
 pkgname=libksysguard
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -16,8 +16,8 @@ short_desc="KDE libksysguard"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/libksysguard"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=c7cf8cd2f0a1e519201dc62889f1135967a850f932c252fd26ea3d88c6564a0f
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9f5e8a5e1ccc2878ceca2f24b1387c944f1fed00c1a54fd90f560e2d583a7d1d
 
 build_options="webengine"
 

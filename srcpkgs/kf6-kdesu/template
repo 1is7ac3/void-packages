@@ -1,6 +1,6 @@
 # Template file for 'kf6-kdesu'
 pkgname=kf6-kdesu
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -11,8 +11,8 @@ short_desc="KDE User interface for running shell commands with root privileges"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdesu"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=3203b047113cf08bca3981ede657e45b417a7cd0f2879bb4f9e901ad4e594616
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9711335fb9f880e664f9483bad34bf709ae7cb6f308301b611ca46749b3a1072
 
 kf6-kdesu-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

@@ -1,6 +1,6 @@
 # Template file for 'kf6-kcoreaddons'
 pkgname=kf6-kcoreaddons
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -9,15 +9,15 @@ configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
  qt6-declarative-host-tools
  $(vopt_if python 'python3-build python3-setuptools shiboken6 llvm')"
-makedepends="qt6-declarative-devel qt6-base-private-devel qt6-tools-devel
+makedepends="qt6-declarative-private-devel qt6-base-private-devel qt6-tools-devel
  $(vopt_if python 'libshiboken6-devel libpyside6-devel python3-devel')"
 short_desc="KCoreAddons"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcoreaddons"
 #changelog=""
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=e1d03cfc7d45987ec31f31104f4732812980e0038beab222633da1108eb6f42f
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=413d6a79bcc1996e5e49733f2fd4a9b2a1b6abb4ae598126f80ffcb9b73d758a
 
 build_options="python"
 

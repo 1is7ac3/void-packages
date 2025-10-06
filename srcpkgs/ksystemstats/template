@@ -1,6 +1,6 @@
 # Template file for 'ksystemstats'
 pkgname=ksystemstats
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -12,8 +12,8 @@ short_desc="Plugin based system monitoring daemon"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only,LGPL-3.0-only"
 homepage="https://invent.kde.org/plasma/ksystemstats"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=715b288f39abfd90ca825b4fa3c38745e9ee1cbbc7f495ba147d7efbe04a49d2
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=072c2cde8676f06616c844817609aede037e7b9c80b0a4ac78503e2ca815ff12
 
 do_check() {
 	cd build

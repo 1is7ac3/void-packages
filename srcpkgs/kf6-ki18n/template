@@ -1,20 +1,20 @@
 # Template file for 'kf6-ki18n'
 pkgname=kf6-ki18n
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
- qt6-declarative-host-tools gettext python3"
-makedepends="qt6-declarative-devel"
-depends="iso-codes"
+ qt6-declarative-host-tools gettext python3 pkg-config"
+makedepends="qt6-declarative-private-devel qt6-tools-devel
+ iso-codes qt6-base-private-devel"
 short_desc="KDE Gettext-based UI text internationalization"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/ki18n"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=d0cbfbf3427c0368daa23f9f68b3cb5b03ad37b6820591491b3ea8a0a28bea61
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=5115456b1db3e16a585663f08d211c6fbcdcb2ff328551eb29f2c929fdd8d9a6
 
 do_check() {
 	cd build

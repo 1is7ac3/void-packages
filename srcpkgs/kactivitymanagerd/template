@@ -1,6 +1,6 @@
 # Template file for 'kactivitymanagerd'
 pkgname=kactivitymanagerd
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
@@ -11,5 +11,5 @@ short_desc="Manage user's activities and track the usage patterns"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kactivitymanagerd"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=de52518b901beeb58a6327316fcda345b3552305556c85a1c4b1133f9ab7a424
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=81170120ee6fde755985ae3639e6d9ef85867fd3a457624f634e3786eebbcd84

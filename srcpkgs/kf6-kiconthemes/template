@@ -1,6 +1,6 @@
 # Template file for 'kf6-kiconthemes'
 pkgname=kf6-kiconthemes
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +13,8 @@ short_desc="KDE Icon GUI utilities"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kiconthemes"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=b971460949fafc98e7ae293f35635c2fd6101a6fc46b2f4fce64bb21440ece04
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=50af98734ceb7bd9a101a8a0ee02be79ed87b978d016fed17c078070596bd8ee
 
 kf6-kiconthemes-devel_package() {
 	depends="${makedepends//private-} ${sourcepkg}>=${version}_${revision}"

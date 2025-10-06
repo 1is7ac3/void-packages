@@ -1,6 +1,6 @@
 # Template file for 'kf6-kpeople'
 pkgname=kf6-kpeople
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +13,8 @@ short_desc="Library that provides access to all contacts and people who hold the
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kpeople"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=09ba29efeb612eef4e54814f1f91e2d07c8942e6cf2c23176d9f306d68544d2b
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=dd6d64170af9d374b6faf7a5253cdbcc49e37a7569668d0a81049ac56ab95125
 
 do_check() {
 	cd build

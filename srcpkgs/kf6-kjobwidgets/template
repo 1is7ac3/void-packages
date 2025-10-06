@@ -1,6 +1,6 @@
 # Template file for 'kf6-kjobwidgets'
 pkgname=kf6-kjobwidgets
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="$(vopt_bool python BUILD_PYTHON_BINDINGS)"
@@ -13,8 +13,8 @@ short_desc="Widgets for showing progress of asynchronous jobs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kjobwidgets"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=e739ff254c4fa34c0de00aa2d9deee138135d99cd0b46ef5db253c18c02bce98
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=35a91bce9a11de5f06a70dd8ab72f8bb25c1ca7f5b26820d3fec3dbc7cab7c8d
 
 build_options="python"
 

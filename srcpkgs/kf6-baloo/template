@@ -1,6 +1,6 @@
 # Template file for 'kf6-baloo'
 pkgname=kf6-baloo
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -15,8 +15,8 @@ short_desc="Framework for searching and managing metadata"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/baloo"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=680b01ed7c789b7ef0ee8f14faffaf2e8bdf87a56a26eb2a6f95a472e5630903
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=f803da36916fd6fea04ecc52438ba9d93ddea2571f491a8c5aa70b319191b384
 
 do_check() {
 	cd build

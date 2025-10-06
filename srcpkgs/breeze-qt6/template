@@ -1,6 +1,6 @@
 # Template file for 'breeze-qt6'
 pkgname=breeze-qt6
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DBUILD_QT5=OFF
@@ -18,6 +18,6 @@ short_desc="Breeze visual style for the Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/breeze"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname%-qt6}-${version}.tar.xz"
-checksum=dcb8433d399511546958f4c8c1a8fae5ed22f2a698f053968d410ee75bd6d8b4
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=eef50fcc46ba89dfc43c6908736ff1751b6d0a81659bbd570fdb2b324bd23977
 replaces="breeze<6.0.0_1 breeze-snow-cursor-theme>=0"

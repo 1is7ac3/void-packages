@@ -15,4 +15,4 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/aurorae"
 distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
-checksum=cad1c8bf98f3f4863d3967dc874d190f2660e9706f1cc38fd493d9cc83da2096
+checksum=2a5cd5f559a7ccbf213d288c30678918deac977df62cb52ba0c066604facdb9a

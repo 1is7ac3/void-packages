@@ -1,6 +1,6 @@
 # Template file for 'kf6-kwayland'
 pkgname=kf6-kwayland
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,8 +12,8 @@ short_desc="Qt-style client and server library wrapper for Wayland libraries"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/kwayland"
-distfiles="${KDE_SITE}/plasma/${version}/kwayland-${version}.tar.xz"
-checksum=0b875d9e7cc5bac4d97d3443ff4311533e0d8dad401af1244d4758a5fa5428f3
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=0a08daad8a9c4de127819fc4d11176477b598b9bd2a3af76f49e106fe26669ed
 
 kf6-kwayland-devel_package() {
 	short_desc+=" - development"

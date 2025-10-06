@@ -1,6 +1,6 @@
 # Template file for 'kf6-kirigami'
 pkgname=kf6-kirigami
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +13,8 @@ short_desc="QtQuick based components set"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kirigami"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=e0574bf5f530a7cd98e0342498681f4374beff108e74262063b105e1c977f866
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=2717f1e945b1ee08925a94f74c36c16de254a03fd852071dbe6303223a1a599d
 
 kf6-kirigami-devel_package() {
 	depends="${makedepends//private-} ${sourcepkg}>=${version}_${revision}"

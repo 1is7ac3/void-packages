@@ -1,6 +1,6 @@
 # Template file for 'kf6-kfilemetadata'
 pkgname=kf6-kfilemetadata
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
@@ -13,8 +13,8 @@ short_desc="Library for extracting file metadata"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kfilemetadata"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=05c4b0955885b46fed6dc23998760fdae59599a960159ec44f779d7498a08834
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=12bf16b96adf065826df025a7babdbfca211382fabfbbd94d340513c6d3bc67f
 
 do_check() {
 	cd build

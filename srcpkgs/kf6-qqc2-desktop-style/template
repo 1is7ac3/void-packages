@@ -1,6 +1,6 @@
 # Template file for 'kf6-qqc2-desktop-style'
 pkgname=kf6-qqc2-desktop-style
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -12,8 +12,8 @@ short_desc="Qt Quick Controls 2: Desktop Style"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/qqc2-desktop-style"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=91a60e0fefa294a337f2519c77ff2405b86eff99f3ea0e8fc3e34265ef4670f2
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=f62684412b751347aea80b2310a0454258c0650df70c235bae80fd388bc42769
 
 do_check() {
 	cd build

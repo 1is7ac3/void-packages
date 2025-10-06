@@ -1,21 +1,22 @@
 # Template file for 'plasma-activities'
 pkgname=plasma-activities
-version=6.4.5
-revision=1
+version=6.90
+revision=2
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-base qt6-tools
  qt6-declarative-host-tools kf6-kconfig"
 makedepends="qt6-base-devel qt6-declarative-devel boost-devel-minimal
- kf6-kconfig-devel kf6-kcoreaddons-devel kf6-kwindowsystem-devel"
+ kf6-kconfig-devel kf6-kcoreaddons-devel kf6-kwindowsystem-devel
+ qt6-declarative-private-devel"
 depends="qt6-plugin-sqlite"
 short_desc="Core components for the KDE's Activities System"
 maintainer="John <me@johnnynator.dev>"
 license="(LGPL-2.1-only OR LGPL-3.0-only) AND GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/plasma-activities"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=30ad23846e97bf3c2ed6d3af25de0ae1d981ea871608492fcc16155efd0c8169
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=9949cd9b7e45bd3b080eaa3d377fafff9ecd112b4de4b582142b210d1af8bdf1
 
 plasma-activities-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"

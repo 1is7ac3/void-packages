@@ -1,20 +1,20 @@
 # Template file for 'layer-shell-qt'
 pkgname=layer-shell-qt
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
  -DKDE_INSTALL_QTPLUGINDIR=lib/qt6/plugins"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base pkg-config
  qt6-wayland-tools wayland-devel qt6-declarative-host-tools"
-makedepends="qt6-wayland-private-devel qt6-declarative-devel qt6-base-private-devel
+makedepends="qt6-wayland-private-devel qt6-declarative-private-devel qt6-base-private-devel
  libxkbcommon-devel wayland-protocols wayland-devel"
 short_desc="Qt component exposing Wayland wl-layer-shell protocol"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"
 homepage="https://invent.kde.org/plasma/layer-shell-qt"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=ef6baae22114f038af89029f3f0075ee29c3b91fd49100828c4c3a32e1496e95
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=cd840fc6789e29966ea5f151391e7b48ada2e87bfd45ce15e03f82cd036234a7
 
 layer-shell-qt-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"

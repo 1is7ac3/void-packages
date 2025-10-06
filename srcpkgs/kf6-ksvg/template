@@ -1,6 +1,6 @@
 # Template file for 'kf6-ksvg'
 pkgname=kf6-ksvg
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +14,8 @@ short_desc="Components for handling SVGs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/ksvg"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=0eab2ba532906b612afee2fbfa802a88d7f4570d4c322972cb6debd320075c10
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=2d80391c09e4b20de619e1159be01585da107cfbf8b4a22e3ded47241f58fc10
 
 kf6-ksvg-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

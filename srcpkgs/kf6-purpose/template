@@ -1,6 +1,6 @@
 # Template file for 'kf6-purpose'
 pkgname=kf6-purpose
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +14,8 @@ short_desc="Offers available actions for a specific purpose"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/purpose"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=a428e4f495658240899e02f15b7a9230e3c33069723b43e1734c21fa1a23b825
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=b26fecc4ecfa0a27d9743341b516cac215daf646930494764f1cf588c5a8a67c
 
 kf6-purpose-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

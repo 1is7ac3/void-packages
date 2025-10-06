@@ -1,6 +1,6 @@
 # Template file for 'kf6-modemmanager-qt'
 pkgname=kf6-modemmanager-qt
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
@@ -11,8 +11,8 @@ short_desc="Qt wrapper for ModemManager DBus API"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/modemmanager-qt"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=c8c0c1c6d6c815efa11b8e31bbb3f5e8014789d7e0babfa1574280be6791d013
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=78495e71331b1f4fb81d082cb57e1f8092a2d4cbfcd992ed0433d0c280d41c77
 
 do_check() {
 	cd build

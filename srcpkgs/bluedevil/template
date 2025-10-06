@@ -1,6 +1,6 @@
 # Template file for 'bluedevil'
 pkgname=bluedevil
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -13,5 +13,5 @@ short_desc="KDE Bluetooth integration"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/bluedevil"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=fb3a07c79ea980cd55f92ad03b8ceb2595fd7a18d70f6fd2c4d9e3538a84d71e
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=714b66e55cf0cfae8a8a3fef655c56f14c440183d1c642950376a3185b2740c6

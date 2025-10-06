@@ -1,6 +1,6 @@
 # Template file for 'plasma-nm'
 pkgname=plasma-nm
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -18,8 +18,8 @@ short_desc="NetworkManager Plasma applet"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/plasma-nm"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=4a7d2296688e9597eede444de6fe6548131ed69136a6e1c4aadefa0f4a015d16
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=079ba9db6161b9a3ea7e04e60be65fc821b5ab94aca0671477c468c7c425fca1
 
 build_options="openconnect"
 

@@ -1,6 +1,6 @@
 # Template file for 'breeze-icons'
 pkgname=breeze-icons
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -11,9 +11,9 @@ checkdepends="fdupes"
 short_desc="Breeze icon theme"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-3.0-or-later"
-homepage="https://community.kde.org/Frameworks"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=4796c4ee6059a777ad8d954a4584e81fdf5047a94a7988fc374052c427bc0b60
+homepage="https://invent.kde.org/frameworks/${pkgname}"
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=af53d0bc1f717e78ba36cda8c77883c1786f001606d39eb7dc864f26705a13bd
 nostrip=yes
 
 if [ -z "$CROSS_BUILD" ]; then

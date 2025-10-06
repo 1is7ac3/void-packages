@@ -1,6 +1,6 @@
 # Template file for 'plasma-desktop'
 pkgname=plasma-desktop
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -21,7 +21,7 @@ makedepends="kf6-kauth-devel kf6-kcrash-devel kf6-kdoctools-devel
  plasma5support-devel libplasma-devel plasma-activities-devel
  plasma-activities-stats-devel kf6-kaccounts-integration-devel
  libaccounts-qt6-devel signon-plugin-oauth2 SDL2-devel plasma-workspace-devel
- ibus-devel libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
+ libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
  xf86-input-evdev-devel xf86-input-libinput-devel qt6-base-private-devel
  qt6-wayland-devel libwacom-devel qt6-qt5compat-devel"
 depends="kmenuedit polkit-kde-agent powerdevil systemsettings
@@ -30,7 +30,7 @@ short_desc="KDE Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, LGPL-2.1-or-later, GFDL-1.2-or-later"
 homepage="https://invent.kde.org/plasma/plasma-desktop"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=7552e4c7c7ccbf5b7756726bb9aaabd344630977aaf13f5f305b4477caa17bb7
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=42a1d9606115d69583e99f05aebecc858502aed23185705cc90062028288a7bd
 replaces="user-manager>=0"
 python_version=3

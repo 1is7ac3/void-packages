@@ -1,6 +1,6 @@
 # Template file for 'kf6-frameworkintegration'
 pkgname=kf6-frameworkintegration
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +14,8 @@ short_desc="Framework to integrate applications with a KDE Workspace"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/frameworkintegration"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=cc5336f8ed19da061f766d4854d76e9cd424ac4082cb44dfb4e7cf136aeab454
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=843d06baea7e3028c2d255cacb5e6e89fe8ede4ab01295b68b1543c079a12706
 
 kf6-frameworkintegration-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

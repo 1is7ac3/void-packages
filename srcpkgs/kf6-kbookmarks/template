@@ -1,6 +1,6 @@
 # Template file for 'kf6-kbookmarks'
 pkgname=kf6-kbookmarks
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base kf6-kconfig"
@@ -9,8 +9,8 @@ short_desc="KDE Bookmarks management library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kbookmarks"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=41a845ffd9effb8d942d04d76fc3a58b0bf23d3fd36aeba21c89ab9eb0fc4f85
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=5a59004745a66bff29aa9eea91aede1901ad2c837634c90e7c5421267d56d149
 
 kf6-kbookmarks-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

@@ -1,6 +1,6 @@
 # Template file for 'kmenuedit'
 pkgname=kmenuedit
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -13,5 +13,5 @@ short_desc="KDE Menu editor"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kmenuedit"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=610f07cd3a26c1618e2a7c31ce9011b28b3af0df5da65eb0100a7e8f08c8942f
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c782c880054169e4bd4a0d81ddd300c47743a6671b50e4e87a169209a07eccab

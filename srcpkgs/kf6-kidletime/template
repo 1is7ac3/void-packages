@@ -1,6 +1,6 @@
 # Template file for 'kf6-kidletime'
 pkgname=kf6-kidletime
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -13,8 +13,8 @@ short_desc="Framework for detection and notification of device idle time"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kidletime"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=44afc88543b23c519eb5f55e7c5120ccd6d4eb2eaaa5bee24e3fb5e4a695dab7
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=e2f7e8d7c69ad7ce8db29a669b866f8f91d17498c5fc14faf524b787945a1739
 
 kf6-kidletime-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel"

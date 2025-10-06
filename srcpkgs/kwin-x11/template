@@ -1,6 +1,6 @@
 # Template file for 'kwin-x11'
 pkgname=kwin-x11
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 build_helper=qemu
@@ -15,14 +15,14 @@ makedepends="qt6-tools-devel qt6-wayland-devel qt6-sensors-devel kf6-kglobalacce
  kf6-kxmlgui-devel kf6-kdecoration-devel libdisplay-info-devel xorg-server-xwayland
  plasma-wayland-protocols kscreenlocker-devel plasma-activities-devel libqaccessibilityclient-devel
  qt6-qt5compat-devel libcap-devel breeze-qt6 aurorae kglobalacceld-devel kf6-kauth-devel
- kf6-kdbusaddons-devel"
+ kf6-kdbusaddons-devel knighttime-devel"
 depends="aurorae"
 short_desc="KDE X11 window manager"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later AND MIT"
 homepage="https://invent.kde.org/plasma/kwin-x11"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=cea91879467afdfa2caf0ec6dd7256eae78defa970cdc9a947fefd85d417acb1
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=95abd8b7e63a8532ced451192a1a813f343e2cd8ca306d0ab28f74dd0c64f3d3
 
 kwin-x11-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"

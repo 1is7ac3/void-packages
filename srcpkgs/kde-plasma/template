@@ -1,6 +1,6 @@
 # Template file for 'kde-plasma'
 pkgname=kde-plasma
-version=6.4.0
+version=6.90
 revision=1
 metapackage=yes
 depends="bluedevil>=${version}

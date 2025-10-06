@@ -1,6 +1,6 @@
 # Template file for 'kf6-knewstuff'
 pkgname=kf6-knewstuff
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml
@@ -14,8 +14,8 @@ short_desc="KDE Framework for downloading and sharing additional application dat
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/knewstuff"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=7e721735abf7e2f6f8c0f42324f885bcad1114c317ac79bfabc705fb8018dba5
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=14cf182c9c120da59485f07ce2bcbd669f541791d5bf8a66b92542fd707533af
 
 kf6-knewstuff-devel_package() {
 	depends="$makedepends ${sourcepkg}>=${version}_${revision}"

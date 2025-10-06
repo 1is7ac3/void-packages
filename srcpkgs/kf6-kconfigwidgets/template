@@ -1,6 +1,6 @@
 # Template file for 'kf6-kconfigwidgets'
 pkgname=kf6-kconfigwidgets
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
@@ -12,8 +12,8 @@ short_desc="Widgets for KConfig"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kconfigwidgets"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=aa5a7be6278a19733f77e6a435f84c3e71926b28f1ac3766313778890d640813
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=42175323f237f9ca2d1fc0ec2d28aa847127aeea609ab5b33bedd3ba45146355
 
 do_check() {
 	cd build

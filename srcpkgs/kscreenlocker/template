@@ -1,6 +1,6 @@
 # Template file for 'kscreenlocker'
 pkgname=kscreenlocker
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -15,8 +15,8 @@ short_desc="KDE Library and components for secure lock screen architecture"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kscreenlocker"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=fac4f9d53d63cb9b06e90feb82c28f471971d15defd4a068bb1e7d2886b7090d
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=e2bd99b9ffd2e3231d67662a5652010e2528b8d42d844ad46fd74c983b1cb6d7
 
 kscreenlocker-devel_package() {
 	short_desc+=" - development files"

@@ -1,6 +1,6 @@
 # Template file for 'sddm-kcm'
 pkgname=sddm-kcm
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF6_HOST_TOOLING=/usr/lib/cmake
@@ -14,5 +14,5 @@ short_desc="KDE Config Module for SDDM"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/sddm-kcm"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=04523f382bfce9259c473c57da4472be4faf92f98b6ed40ab24ab663a337c9ad
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=c893c0b159267b96d4f8453275644d2ee0b39c919e9da55de8b56da66745c45b

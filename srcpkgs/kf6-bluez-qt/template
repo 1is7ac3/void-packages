@@ -1,20 +1,20 @@
 # Template file for 'kf6-bluez-qt'
 pkgname=kf6-bluez-qt
-version=6.18.0
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DKDE_INSTALL_QMLDIR=lib/qt6/qml"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
  qt6-declarative-host-tools"
-makedepends="qt6-declarative-devel"
+makedepends="qt6-declarative-private-devel qt6-base-private-devel"
 checkdepends="dbus"
 short_desc="Qt wrapper for Bluez 5 DBus API"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/bluez-qt"
 #changelog=""
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
-checksum=9340849075a7aa3fe9f21e2d2b838962c0ae84edfa16a4b4cf17f4022305ceb3
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=5e56a0964ed8a3933dc16b3848c87b1abe498246a750bc38aed1bfc106ccc7f4
 
 do_check() {
 	cd build

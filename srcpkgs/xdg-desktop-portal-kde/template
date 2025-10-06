@@ -1,6 +1,6 @@
 # Template file for 'xdg-desktop-portal-kde'
 pkgname=xdg-desktop-portal-kde
-version=6.4.5
+version=6.90
 revision=1
 build_style=cmake
 configure_args="-DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner"
@@ -18,8 +18,8 @@ short_desc="Backend implementation for xdg-desktop-portal that is using Qt/KF6"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"
 homepage="https://invent.kde.org/plasma/xdg-desktop-portal-kde"
-distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=9fe04f0482bbf326088369c035d7b6f403db0c06aea5934442a7788799edcee2
+distfiles="${homepage}/-/archive/master/${pkgname}-master.tar.gz"
+checksum=713bc29677d1a1bb98f61eef4be6e89b9a2a9dcd1ecc53e1f85c77076d9a4c0f
 
 do_check() {
 	cd build
