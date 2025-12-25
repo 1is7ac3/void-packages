@@ -8,7 +8,7 @@ maintainer="1is7ac3 <isaac.qa13@gmail.com>"
 license="MIT"
 homepage="https://code.visualstudio.com/"
 distfiles="https://code.visualstudio.com/sha/download?build=insider&os=linux-rpm-x64>${pkgname}-${version}.rpm"
-checksum=c1bad9d78b3eace03da636bd5e21907a04b73354a67f4517e7e89d4e63f7f1c5
+checksum=8a00730429972ad670f52e6872229f125b2821ed43186e61c3250c398289d325
 allow_unknown_shlibs=yes
 nodebug=yes
 nostrip=yes
