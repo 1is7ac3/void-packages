@@ -1,6 +1,6 @@
 # Template file for 'base-system-my'
 pkgname=base-system-my
-version=3.1
+version=0.2
 revision=1
 metapackage=yes
 short_desc="Void Linux my meta package"
@@ -10,17 +10,15 @@ homepage="https://www.voidlinux.org"
 
 depends="
  grub-x86_64-efi power-profiles-daemon xmirror NetworkManager tzdata util-linux
- print-manager base-files coreutils diffutils ncurses ark zsh xtools powerdevil
+ base-files coreutils diffutils ncurses zsh xtools efivar linux-mainline shadow
  void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree runit-void tar
- noto-fonts-cjk kdenlive btrfs-progs pciutils openssh bluez file fastfetch sudo
- glibc-locales plasma-browser-integration dracut less gzip iputils konsole kate
- grep shadow void-artwork vim xbps linux-firmware-network linux-firmware-nvidia
- kcalc sed cups-filters font-awesome6 papirus-icon-theme which removed-packages
- lsd bluedevil breeze-gtk kde-gtk-config kgamma kinfocenter kscreen ksshaskpass
- kwallet-pam plasma-desktop plasma-nm plasma-pa elogind upower udisks2 kf6-kded
- dolphin-plugins xdg-desktop-portal-kde plasma-workspace-wallpapers sddm-kcm iw
- spectacle gwenview okular kdeconnect libspa-bluetooth usbutils mesa-vaapi gimp
- kbd mesa-dri xbps-command-not-found nvidia-vaapi-driver linux-mainline mpv
- inkscape linux-mainline-headers linux-firmware-amd kdegraphics-thumbnailers
- kdeplasma-addons krita
- "
+ btrfs-progs pciutils openssh bluez file sudo lm_sensors usbutils glibc-locales
+ dracut less gzip iputils grep void-artwork vim xbps linux-firmware-network sed
+ linux-firmware-nvidia which removed-packages lsd mesa-vaapi iw fonts-droid-ttf 
+ udisks2 elogind upower kbd mesa-dri xbps-command-not-found nvidia-vaapi-driver
+ libspa-bluetooth linux-mainline-headers linux-firmware-amd mesa-vulkan-radeon
+ plasma-browser-integration konsole kate kcalc font-awesome6 papirus-icon-theme
+ bluedevil breeze-gtk kde-gtk-config kgamma kscreen ksshaskpass kwallet-pam ark
+ plasma-desktop plasma-nm plasma-pa kf6-kded dolphin-plugins kdeconnect okular
+ xdg-desktop-portal-kde sddm-kcm spectacle gwenview kdegraphics-thumbnailers 
+ kdeplasma-addons ffmpegthumbs powerdevil fastfetch"
