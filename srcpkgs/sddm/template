@@ -1,17 +1,17 @@
 # Template file for 'sddm'
 pkgname=sddm
 version=0.21.0
-revision=2
+revision=3
 build_style=cmake
 _configure_args="-DBUILD_MAN_PAGES=ON -DNO_SYSTEMD=ON -DUSE_ELOGIND=ON
  -DLOGIN_DEFS_PATH=${XBPS_SRCPKGDIR}/shadow/files/login.defs
  -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf
- -DSDDM_INITIAL_VT=7"
+ -DSDDM_INITIAL_VT=1"
 configure_args="${_configure_args} -DBUILD_WITH_QT6=ON
  -DQT_IMPORTS_DIR=/usr/lib/qt6/qml"
 hostmakedepends="extra-cmake-modules pkg-config python3-docutils
  qt6-tools qt6-base"
-makedepends="qt6-declarative-devel qt5-declarative-devel qt5-tools-devel
+makedepends="qt6-declarative-devel qt6-tools-devel
  pam-devel elogind-devel"
 depends="dbus"
 short_desc="QML based X11 display manager"
@@ -49,18 +49,18 @@ post_configure() {
 
 	export CMAKE_GENERATOR="Ninja"
 	CFLAGS="-DNDEBUG ${CFLAGS/ -pipe / }" CXXFLAGS="-DNDEBUG ${CXXFLAGS/ -pipe / }" \
-		cmake -B build5 ${cmake_args} ${_configure_args} \
+		cmake -B build ${cmake_args} ${_configure_args} \
 		${wrksrc}/${build_wrksrc}
 }
 
 post_build() {
-	ninja -C build5 ${makejobs} sddm-greeter
+	ninja -C build ${makejobs} sddm-greeter-qt6
 }
 
 post_install() {
-	ninja -C build5 src/greeter/install components/install
-	DESTDIR="$DESTDIR" cmake --install build5/src/greeter
-	DESTDIR="$DESTDIR" cmake --install build5/components
+	ninja -C build src/greeter/install components/install
+	DESTDIR="$DESTDIR" cmake --install build/src/greeter
+	DESTDIR="$DESTDIR" cmake --install build/components
 
 	vsed -i '/tally/d' ${DESTDIR}/etc/pam.d/sddm-autologin
 	vsv sddm
