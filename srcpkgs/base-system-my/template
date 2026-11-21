@@ -1,6 +1,6 @@
 # Template file for 'base-system-my'
 pkgname=base-system-my
-version=0.2
+version=0.4
 revision=1
 metapackage=yes
 short_desc="Void Linux my meta package"
@@ -18,7 +18,7 @@ depends="
  udisks2 elogind upower kbd mesa-dri xbps-command-not-found nvidia-vaapi-driver
  libspa-bluetooth linux-mainline-headers linux-firmware-amd mesa-vulkan-radeon
  plasma-browser-integration konsole kate kcalc font-awesome6 papirus-icon-theme
- bluedevil breeze-gtk kde-gtk-config kgamma kscreen ksshaskpass kwallet-pam ark
- plasma-desktop plasma-nm plasma-pa kf6-kded dolphin-plugins kdeconnect okular
+ bluedevil breeze-gtk kde-gtk-config kscreen ksshaskpass kwallet-pam ark okular
+ plasma-desktop plasma-nm plasma-pa kf6-kded dolphin-plugins kdeconnect 
  xdg-desktop-portal-kde sddm-kcm spectacle gwenview kdegraphics-thumbnailers 
- kdeplasma-addons ffmpegthumbs powerdevil fastfetch"
+ kdeplasma-addons ffmpegthumbs powerdevil fastfetch kmenuedit"
