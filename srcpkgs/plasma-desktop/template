@@ -1,8 +1,8 @@
 # Template file for 'plasma-desktop'
 # group=kde-plasma
 pkgname=plasma-desktop
-version=6.7.5
-revision=3
+version=6.8.3
+revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules pkg-config gettext qt6-base qt6-shadertools
@@ -19,7 +19,7 @@ makedepends="kf6-kcrash-devel kf6-kdoctools-devel kf6-kauth-devel
  plasma5support-devel libplasma-devel plasma-activities-devel
  plasma-activities-stats-devel kf6-kaccounts-integration-devel
  libaccounts-qt6-devel signon-plugin-oauth2 SDL2-devel plasma-workspace-devel
- ibus-devel libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
+ libXcursor-devel libXi-devel libxkbfile-devel libxkbcommon-devel
  xf86-input-evdev-devel xf86-input-libinput-devel qt6-base-private-devel
  qt6-shadertools-devel qt6-declarative-devel qt6-svg-devel
  libksysguard-devel kf6-kded-devel kf6-baloo-devel libX11-devel
@@ -34,7 +34,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, LGPL-2.1-or-later, GFDL-1.2-or-later"
 homepage="https://invent.kde.org/plasma/plasma-desktop"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=079fcf6b87d7bf65e3f2a4670d605fac9469344c279a285a98ad549332d7b53e
+checksum=aa050cfb1005d6f806dc347bb11bc583d5360dd11d51b4501f6328aa7b26d370
 replaces="user-manager>=0"
 python_version=3
 
